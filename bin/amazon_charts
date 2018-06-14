@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/kindle_select_25'
+require_relative '../lib/amazon_charts'
 
 Scraper.scrape_data
 
