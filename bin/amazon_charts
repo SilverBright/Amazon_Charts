@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/amazon_charts'
+require "bundler/setup"
+require "amazon_charts"
 
-Scraper.scrape_data
+Amazon::CLI.new.call
 
