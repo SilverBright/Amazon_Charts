@@ -2,6 +2,32 @@
 
 require "bundler/setup"
 require "amazon_charts"
+# require_relative '../lib/amazon_charts'
 
-Amazon::CLI.new.call
+Scraper.scrape_data
+
+Book.all.each do |book|
+	puts " "
+	puts "-----------------------------------"
+	book.instance_variables.each do |var|
+		puts book.instance_variable_get(var)
+	end
+	puts "-----------------------------------"
+	puts " "
+	sleep(1)
+end
+
+# Book.all.each do |book|
+# 	puts book.title
+# end
+
+# print Book.all[0].methods
+
+
+
+
+# Amazon::CLI.new.call
+
+# bin/amazon_charts
+
 
