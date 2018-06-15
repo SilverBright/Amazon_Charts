@@ -1,6 +1,23 @@
 # require 'pry'
 # require "amazon_charts"
 
+class AmazonCharts::Book
+	attr_accessor :title, :author, :publisher, :rank, :rating
+
+	@@all = []
+
+	def initialize(hash)
+		hash.each do |key, value|
+			self.send("#{key}=", value)
+		end
+		@@all << self
+	end
+
+	def self.all
+		@@all
+	end
+
+end
 
 # class Book
 # 	attr_accessor :title, :author, :publisher

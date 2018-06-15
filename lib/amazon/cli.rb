@@ -1,5 +1,71 @@
 # # CLI Controller
 
+# require_relative './amazon_charts'
+
+class AmazonCharts::CLI
+
+	def start
+		puts "Welcome to Amazon Charts: Most Sold Books of the Week app!"
+		puts "Which books whould you like to see?"
+
+	end
+
+
+end
+
+
+# Book.all.each do |book|
+# 	book_details = [
+# 		"Title",
+# 		"Author",
+# 		"Publisher"
+# 	]
+# 	puts " "
+# 	puts "-----------------------------------"
+# 	book.instance_variables.each_with_index do |var, index|
+# 		break if index == 20
+# 		puts "#{book_details[index]}: #{book.instance_variable_get(var)}"
+# 	end
+# 	puts "-----------------------------------"
+# 	puts " "
+# 	sleep(0.5)
+# end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # class Amazon::CLI
 
 # 	def call
