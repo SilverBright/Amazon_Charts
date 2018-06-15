@@ -1,5 +1,6 @@
 require "Amazon/version"
 require "Amazon/cli"
+require "Amazon/books"
 
 
 require "nokogiri"
@@ -10,7 +11,7 @@ require "rake"
 
 
 
-# class Book
+# class Books
 # 	attr_accessor :title, :author, :publisher, :rank, :rating
 
 # 	@@all = []
