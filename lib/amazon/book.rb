@@ -2,7 +2,7 @@
 # require "amazon_charts"
 
 class AmazonCharts::Book
-	attr_accessor :title, :author, :publisher, :rank, :rating
+	attr_accessor :title, :author, :publisher
 
 	@@all = []
 
@@ -19,16 +19,6 @@ class AmazonCharts::Book
 
 end
 
-# class Book
-# 	attr_accessor :title, :author, :publisher
-
-# 	@@all = []
-
-# 	def initialize
-# 		@@all << self
-# 	end
-
-# end
 
 # class Scraper
 
