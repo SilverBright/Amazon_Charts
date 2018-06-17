@@ -10,7 +10,7 @@ class AmazonCharts::Book
 		hash.each do |key, value|
 			self.send("#{key}=", value)
 		end
-		@@all << self
+		@@all << self 
 	end
 
 	def self.all

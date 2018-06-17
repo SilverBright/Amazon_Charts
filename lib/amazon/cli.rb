@@ -6,67 +6,75 @@ class AmazonCharts::CLI
 
 	def call 
 		greeting
-		list_books
 		menu
-		goodbye
+		list_june_10
+		list_june_03
 	end
 
 	def greeting
-		puts <<~DOC
-				<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
-				
-				Welcome to Amazon Charts app!
-				
-				Here are the top 20 Fiction books sold for: #{AmazonCharts::Scraper.this_week_date}...
-			
-				<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
-				DOC
-				sleep(5)
+		puts "Welcome to Amazon Charts app!"
 	end
 
-	def start
-		AmazonCharts::Scraper.scrape_this_week
-			# puts <<~DOC
-			# 	<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
-				
-			# 	Welcome to Amazon Charts app!
-				
-			# 	Here are the top 20 Fiction books sold for: #{AmazonCharts::Scraper.this_week_date}...
-			
-			# 	<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
-			# 	DOC
-			# 	sleep(5)
-			
-		AmazonCharts::Book.all.each do |book|
+	def menu
+		input = nil
+		while input != "exit"
+			puts "Please select which week you'd like to see the top 20 books in fiction sold."
+				input = gets.strip.downcase
+				if input.to_i == 1
+					list_june_10
+				elsif input.to_i == 2
+					list_june_03
+				elsif input.to_i > 2
+				puts "OOPS!"
+				else
+					puts "Thanks for stopping by!"
+					exit
+			end
+		end
+	end
+
+	def list_june_10
+		puts "Here are the top 20 Fiction books sold for: #{AmazonCharts::Scraper.get_date_june_10}!"
+			AmazonCharts::Scraper.week_of_June_10_2018
+			AmazonCharts::Book.all.each do |book|
 				book_details = [
 					"Title",
 					"Author",
 					"Publisher"
 				]
-			sleep(1)
-			puts "---------------------------------------------------"
-			book.instance_variables.each_with_index do |var, index|
-			puts "#{book_details[index]}: #{book.instance_variable_get(var)}"
+			# sleep(0.1)
+				puts "---------------------------------------------------"
+				book.instance_variables.each_with_index do |var, index|
+				puts "#{book_details[index]}: #{book.instance_variable_get(var)}"
+			end
+				puts "---------------------------------------------------"
+			end
 		end
-			puts "---------------------------------------------------"
+
+	def list_june_03
+		puts "Here are the top 20 Fiction books sold for: #{AmazonCharts::Scraper.get_date_june_3}!"
+			AmazonCharts::Scraper.week_of_June_3_2018
+			AmazonCharts::Book.all.each do |book|
+				book_details = [
+					"Title",
+					"Author",
+					"Publisher"
+				]
+			# sleep(0.1)
+				puts "---------------------------------------------------"
+				book.instance_variables.each_with_index do |var, index|
+				puts "#{book_details[index]}: #{book.instance_variable_get(var)}"
+			end
+				puts "---------------------------------------------------"
+			end
 		end
+
 
 	end
-end
 
-			# list_books
-			# menu
-		# end
 
-		# def list_books
-		# 	@books.each do |book|
-		# 		puts " "
-		# 		puts "-----------------------------------"
-		# 		puts FULL_DETAILS
-		# 		puts "-----------------------------------"
-		# 		puts " "
-		# 		end
-		# end
+
+		
 
 # 		def print_details(book, number, details)
 # 			book.instance_variables.each_with_index do |var, index|
