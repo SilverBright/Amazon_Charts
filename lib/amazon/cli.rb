@@ -7,8 +7,8 @@ class AmazonCharts::CLI
 	def call 
 		greeting
 		menu
-		list_june_10
-		list_june_03
+		fiction_books
+		non_fiction_books
 	end
 
 	def greeting
@@ -18,12 +18,17 @@ class AmazonCharts::CLI
 	def menu
 		input = nil
 		while input != "exit"
-			puts "Please select which week you'd like to see the top 20 books in fiction sold."
+			puts <<~DOC
+			Please make a selection:
+			For #{AmazonCharts::Scraper.date}
+			1. Top 20 Books Sold in Fiction 
+			2. Top 20 Books Sold in Non-Fiction
+			DOC
 				input = gets.strip.downcase
 				if input.to_i == 1
-					list_june_10
+					fiction_books
 				elsif input.to_i == 2
-					list_june_03
+					non_fiction_books
 				elsif input.to_i > 2
 				puts "OOPS!"
 				else
@@ -33,9 +38,9 @@ class AmazonCharts::CLI
 		end
 	end
 
-	def list_june_10
-		puts "Here are the top 20 Fiction books sold for: #{AmazonCharts::Scraper.get_date_june_10}!"
-			AmazonCharts::Scraper.week_of_June_10_2018
+	def fiction_books
+		# puts "Top 20 Books Sold in Fiction for: #{AmazonCharts::Scraper.fiction_date}!"
+			AmazonCharts::Scraper.fiction
 			AmazonCharts::Book.all.each do |book|
 				book_details = [
 					"Title",
@@ -51,9 +56,9 @@ class AmazonCharts::CLI
 			end
 		end
 
-	def list_june_03
-		puts "Here are the top 20 Fiction books sold for: #{AmazonCharts::Scraper.get_date_june_3}!"
-			AmazonCharts::Scraper.week_of_June_3_2018
+	def non_fiction_books
+		# puts "Here are the top 20 Fiction books sold for: #{AmazonCharts::Scraper.non_fiction_date}!"
+			AmazonCharts::Scraper.non_fiction
 			AmazonCharts::Book.all.each do |book|
 				book_details = [
 					"Title",
