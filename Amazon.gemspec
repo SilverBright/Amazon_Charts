@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Babs"]
   spec.email         = ["36780653+51LV3RBR16HT@users.noreply.github.com"]
 
-  spec.summary       = %q{Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.summary       = %q{Amazon_Charts CLI will be a command-line app to allow a user to see a list of the 'Top 20 Most Sold Books of the Week' in Fiction and non-Fiction}
+  # spec.description   = %q{Write a longer description or delete this line.}
   # spec.homepage      = "Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
