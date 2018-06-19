@@ -1,5 +1,5 @@
 require 'pry'
-
+# Command Center
 class AmazonCharts::CLI
 
 	def call 
@@ -20,10 +20,11 @@ class AmazonCharts::CLI
 		input = nil
 		while input != "exit"
 			puts <<~DOC
-			Please make a selection:
+			Please make a selection.
 			For #{AmazonCharts::Scraper.date}:
-			1. Top 20 Books Sold in Fiction, starting with the top seller
-			2. Top 20 Books Sold in Non-Fiction, starting with the top seller
+			Select [1] to see the top 20 books sold in fiction.
+			Select [2] to see the top 20 books sold in non-fiction.
+			Or, type "exit" to exit the program.
 			DOC
 				input = gets.strip.downcase
 				if input.to_i == 1
@@ -53,7 +54,6 @@ class AmazonCharts::CLI
 				book.instance_variables.each_with_index do |var, index|
 				puts "#{book_details[index]}: #{book.instance_variable_get(var)}"
 			end
-			
 				puts "---------------------------------------------------"
 			end
 		end

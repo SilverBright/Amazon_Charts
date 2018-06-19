@@ -1,3 +1,4 @@
+# Book scraper
 require 'open-uri'
 require 'Nokogiri'
 require 'pry'
