@@ -17,4 +17,4 @@ After making a selection the user will see a list of book titles, authors, publi
 
 The user will not be able to make any creations or edits to any of the lists.
 
-Scraper class and Book class will scrape the site and create the books, and Amazon_Charts CLI will interact with the user.
+Scraper class will scrape the data, the Book class will create the books, and the cli will interact with the user.
