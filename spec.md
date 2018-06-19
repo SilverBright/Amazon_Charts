@@ -1,6 +1,6 @@
 # Specifications for the CLI Assessment
 
 Specs:
-- [x] Have a CLI for interfacing with the application
-- [x] Pull data from an external source
-- [x] Implement both list and detail views
+- [x] cli.rb file will run the application and interact with the user
+- [x] Data was scraped from Amazon.
+- [x] A menu view has been implemented.  When the user enters a selection, the details will be visible.
