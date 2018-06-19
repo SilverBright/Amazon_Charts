@@ -13,7 +13,7 @@ Select a number to see the top 20 books in Fiction or non-fiction for the week:
 2.	Top Books in non-Fiction
 3.	Exit
 
-After making a selection the user will see a list of book titles, authors, publishers.
+After making a selection the user will see a list of book titles, authors, publishers, with a rank at the top.
 
 The user will not be able to make any creations or edits to any of the lists.
 

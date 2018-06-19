@@ -21,8 +21,5 @@ class AmazonCharts::Book
 		self.all.clear
 	end
 
-	
-
-
 end
 
