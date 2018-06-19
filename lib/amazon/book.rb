@@ -1,5 +1,8 @@
+# Book Factory
+require 'pry'
+
 class AmazonCharts::Book
-	attr_accessor :title, :author, :publisher
+	attr_accessor :rank, :title, :author, :publisher
 
 	@@all = []
 
@@ -7,12 +10,19 @@ class AmazonCharts::Book
 		hash.each do |key, value|
 			self.send("#{key}=", value)
 		end
-		@@all << self
+		@@all << self	
 	end
 
 	def self.all
 		@@all
 	end
+
+	def self.destroy_all
+		self.all.clear
+	end
+
+	
+
 
 end
 

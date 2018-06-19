@@ -28,15 +28,18 @@ class AmazonCharts::CLI
 			DOC
 				input = gets.strip.downcase
 				if input.to_i == 1
-					fiction_books
+					fiction_books	
+					AmazonCharts::Book.destroy_all
 				elsif input.to_i == 2
-					non_fiction_books
+					non_fiction_books	
+					AmazonCharts::Book.destroy_all
 				elsif input != 1 && input != 2 && input != "exit"
 					puts "OOPS!"
 					menu
 				else input == "exit"
 					goodbye
 			end
+		
 		end
 
 	end
@@ -45,6 +48,7 @@ class AmazonCharts::CLI
 			AmazonCharts::Scraper.fiction
 			AmazonCharts::Book.all.each do |book|
 				book_details = [
+					"Rank",
 					"Title", 
 					"Author", 
 					"Publisher"
@@ -62,6 +66,7 @@ class AmazonCharts::CLI
 			AmazonCharts::Scraper.non_fiction
 			AmazonCharts::Book.all.each do |book|
 				book_details = [
+					"Rank",
 					"Title",
 					"Author",
 					"Publisher"
