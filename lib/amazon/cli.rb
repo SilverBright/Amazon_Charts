@@ -1,4 +1,3 @@
-# # CLI Controller
 require 'pry'
 
 class AmazonCharts::CLI

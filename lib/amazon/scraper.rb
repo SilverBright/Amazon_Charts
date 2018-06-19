@@ -32,34 +32,3 @@ class AmazonCharts::Scraper
 		end
 	end
 end
-
-
-
-
-
-	# 	doc = Nokogiri::HTML(open("https://www.amazon.com/charts/2018-06-10/mostsold/fiction/"))
-	# 	binding.pry
-	# end
-
-
-	# doc.css(".kc-rank-card-title").text.lines.take(40).join(" ").gsub( /\s+/, " " ).strip
-
-			# doc.search(".kc-rank-card-title").each do |titles|
-			# title = titles.text.gsub( /\s+/, " " ).strip 
-
-
-			# 	doc.search(".kc-rank-card-author").each do |authors|
-			# 	author = authors.text.gsub("\n", "").strip.gsub("by","").strip
-
-
-			# 	doc.search(".kc-rank-card-publisher").each do |publishers|
-			# 	publisher = publishers.text.gsub("\n", "").strip.gsub("PUBLISHER:", "").strip.gsub("by","")
-
-
-			# 	doc.search(".kc-rank-card-rank").each do |rankings|
-			# 	rank = rankings.text.strip
-
-
-			# 	doc.search(".numeric-star-data").each do |ratings|
-			# 	rating = ratings.text.gsub("\n", "").strip
-
