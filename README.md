@@ -1,5 +1,22 @@
 # Amazon
 
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'Amazon'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install Amazon
+
+
 ## Usage
 
 Run: bin/amazon_charts from the console or terminal to run the app.
