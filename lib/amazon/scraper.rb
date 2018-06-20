@@ -1,4 +1,4 @@
-# Book scraper
+# Book Data Collector
 require 'open-uri'
 require 'Nokogiri'
 require 'pry'
@@ -66,6 +66,7 @@ class AmazonCharts::Scraper
 						publisher: book.css(".kc-rank-card-publisher").text.gsub("\n", "").strip.gsub("PUBLISHER:", "").strip.gsub("by","")
 				 	})
 				end
+			end
 		end
-	end
+		
 end

@@ -7,7 +7,7 @@ When they run the app, they will see a greeting, and be asked to enter a number 
 
 Available prompts will look something like this:
 
-Select a number to see the top 20 books in Fiction or non-fiction for the week:
+Select a number to see the top 20 books in Fiction or non-Fiction for the week:
 
 1.	Top Books in Fiction
 2.	Top Books in non-Fiction
@@ -17,4 +17,6 @@ After making a selection the user will see a list of book titles, authors, publi
 
 The user will not be able to make any creations or edits to any of the lists.
 
-Scraper class will scrape the data, the Book class will create the books, and the cli will interact with the user.
+Scraper class will scrape the data (book data collection).
+The Book class will create/destroy the books (book factory).
+The cli will interact with the user (book command center).

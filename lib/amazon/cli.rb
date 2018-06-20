@@ -1,5 +1,5 @@
 require 'pry'
-# Command Center
+# Book Command Center
 class AmazonCharts::CLI
 
 	def call 
