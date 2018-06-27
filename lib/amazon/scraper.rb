@@ -45,6 +45,7 @@ class AmazonCharts::Scraper
 			date = Nokogiri::HTML(open("https://www.amazon.com/charts"))
 			date.css(".kc-title-text").text.split.join(" ")
 		end
+
 		
 
 	# def self.date
