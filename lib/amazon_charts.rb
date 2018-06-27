@@ -1,7 +1,7 @@
 module AmazonCharts
 end
 
-
+# require_relative 'lib/amazon/version'
 require "Amazon/version"
 require "Amazon/book"
 require "Amazon/cli"

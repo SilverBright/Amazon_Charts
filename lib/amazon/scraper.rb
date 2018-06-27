@@ -5,9 +5,15 @@ require 'pry'
 
 class AmazonCharts::Scraper
 
+
+	@@doc ||= Nokogiri::HTML(open("https://www.amazon.com/charts"))
+
+
 	def self.fiction
-		doc = Nokogiri::HTML(open("https://www.amazon.com/charts/2018-06-10/mostsold/fiction/"))
+		#not static date
+		@@doc ||= Nokogiri::HTML(open("https://www.amazon.com/charts/2018-06-10/mostsold/fiction/"))
 			cards = doc.css(".kc-rank-card")
+			#Make it DRY
 
 			cards.each do |book|
 				if(!book.attribute("id").value.include?("-mobile"))
@@ -34,11 +40,18 @@ class AmazonCharts::Scraper
 		end
 	end
 
-	def self.date
-		doc = Nokogiri::HTML(open("https://www.amazon.com/charts/2018-06-10/mostsold/fiction/"))
-		doc.search(".kc-title-text")
-		this_week = doc.search(".kc-title-text").text.split.join(" ")
-	end
+
+		def self.date
+			date = Nokogiri::HTML(open("https://www.amazon.com/charts"))
+			date.css(".kc-title-text").text.split.join(" ")
+		end
+		
+
+	# def self.date
+	# 	doc = Nokogiri::HTML(open("https://www.amazon.com/charts/2018-06-10/mostsold/fiction/"))
+	# 	doc.search(".kc-title-text")
+	# 	this_week = doc.search(".kc-title-text").text.split.join(" ")
+	# end
 
 	def self.non_fiction
 		doc = Nokogiri::HTML(open("https://www.amazon.com/charts/2018-06-10/mostsold/nonfiction/"))

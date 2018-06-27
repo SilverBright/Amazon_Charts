@@ -3,6 +3,7 @@ require 'pry'
 class AmazonCharts::CLI
 
 	def call 
+		#scrape and make books with date
 		greeting
 		menu
 		fiction_books
@@ -17,7 +18,7 @@ class AmazonCharts::CLI
 	end
 
 	def menu
-		input = nil
+		input = nil #define input method or program breaks
 		while input != "exit"
 			puts <<~DOC
 			Please make a selection.
@@ -45,8 +46,8 @@ class AmazonCharts::CLI
 	end
 
 	def fiction_books
-			AmazonCharts::Scraper.fiction
-			AmazonCharts::Book.all.each do |book|
+			AmazonCharts::Scraper.fiction  #data from the book scraper
+			AmazonCharts::Book.all.each do |book| #iterate through data from the book factory
 				book_details = [
 					"Rank",
 					"Title", 
@@ -55,10 +56,18 @@ class AmazonCharts::CLI
 				]
 	
 				puts "---------------------------------------------------"
-				book.instance_variables.each_with_index do |var, index|
+				book.instance_variables.each_with_index do |var, index| 
 				puts "#{book_details[index]}: #{book.instance_variable_get(var)}"
+				#puts "Rank                	:  1
+				#puts "Title                :  The President Is Missing
+				#puts "Author               :  Bill Clinton & James Patterson
+				#puts "Publisher            :  Little, Brown and Company
 			end
 				puts "---------------------------------------------------"
+				#book (the book object) =>  @author="Author Name", @title="Title Name", etc...
+				#book_details => "Rank", "Title", "Author", "Publisher"
+				#book.instance_variables =>[:@rank, :@title, :@author, :@publisher]
+				#binding.pry
 			end
 		end
 
