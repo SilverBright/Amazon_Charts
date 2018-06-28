@@ -1,27 +1,20 @@
-# Book Factory
-require 'pry'
-
 class AmazonCharts::Book
-	attr_accessor :rank, :title, :author, :publisher
+	attr_accessor :rank, :title, :author, :publisher, :type
 
 	@@all = []
 
-	#Ruby Metaprogramming
-	def initialize(hash) #value
+	def initialize (hash) 
 		hash.each do |key, value|
-			self.send("#{key}=", value)  # i.e. send to myself (the instance) the key of title, and the value of "Title of a book"
+			self.send("#{key}=", value)  
 		end
-		@@all << self	#push these into the @@all bucket
+		@@all << self	
 	end
 
-	def self.all #assign @@all to self
+	def self.all 
 		@@all
 	end
 
-	def self.destroy_all #this method dumps the data each time the program is run
+	def self.destroy_all 
 		self.all.clear
 	end
-
 end
-
-

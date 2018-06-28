@@ -20,11 +20,3 @@ The user will not be able to make any creations or edits to any of the lists.
 Scraper class will scrape the data (book data collection).
 The Book class will create/destroy the books (book factory).
 The cli will interact with the user (book command center).
-
-Refactor:
-	1. Make dates dynamic (not static)
-	2. Scrape all the books onces to eliminate the need for a destroy method
-		a. make doc a global variable @@doc  Use ||= comparison method (if left side of || is true, do it, otherwise if false, do the right side.)
-	3. Add a :type to attr_accessor to identify fiction vs. non-fiction
-	4. Make code more DRY
-	
