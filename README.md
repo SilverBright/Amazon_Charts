@@ -1,3 +1,4 @@
+## Amazon Charts
 
 Welcome to Amazon_Charts, a Ruby CLI app you can use to see a <i>current</i> list of top selling books in Fiction and Non-Fiction. (Top 20)
 
