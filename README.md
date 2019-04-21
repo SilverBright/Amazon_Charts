@@ -4,29 +4,23 @@ Welcome to Amazon_Charts, a Ruby CLI app you can use to see a <i>current</i> lis
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Clone or Download:
 
-```ruby
-gem 'Amazon'
-```
+    git@github.com:SilverBright/Amazon-Charts.git
 
-And then execute:
+Then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install Amazon
-
-Run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
-
 ## Usage
 
-Run: bin/amazon_charts from the terminal to run the app.
+Run `bin/setup` to install dependencies.
+
+Then, run `bin/amazon_charts` to run the app, via an interactive prompt.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/silverbright/Amazon. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
