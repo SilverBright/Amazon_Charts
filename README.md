@@ -14,7 +14,7 @@ Then execute:
 
 ## Usage
 
-Run `bin/setup` to install dependencies.
+Run `bin/setup` to install dependencies (if necessary).
 
 Then, run `bin/amazon_charts` to run the app, via an interactive prompt.
 
