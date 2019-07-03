@@ -32,8 +32,6 @@ Users will see a list of the following attributes, for each book:
 
 Pressing any other key will display an error message and promt the user to make a correct entry.
 
-[Imgur](https://i.imgur.com/e9yiqBH.png)
-
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
