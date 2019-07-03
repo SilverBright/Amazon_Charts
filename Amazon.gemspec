@@ -6,10 +6,10 @@ require "Amazon/version"
 Gem::Specification.new do |spec|
   spec.name          = "Amazon"
   spec.version       = Amazon::VERSION
-  spec.authors       = ["Babs"]
+  spec.authors       = ["Barbara Washington"]
   spec.email         = ["36780653+51LV3RBR16HT@users.noreply.github.com"]
 
-  spec.summary       = %q{Amazon_Charts CLI will be a command-line app to allow a user to see a list of the 'Top 20 Most Sold Books of the Week' in Fiction and non-Fiction}
+  spec.summary       = %q{Amazon_Charts CLI is a command-line interface that displays a list of the 'Top 20 Most Sold Books of the Week' in Fiction and non-Fiction}
   # spec.description   = %q{Write a longer description or delete this line.}
   # spec.homepage      = "Put your gem's website or public repo URL here."
   spec.license       = "MIT"
