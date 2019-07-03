@@ -1,6 +1,6 @@
 ## Amazon Charts
 
-Welcome to Amazon_Charts, a Ruby CLI app you can use to see a <i>current</i> list of top selling books in Fiction and Non-Fiction. (Top 20)
+Welcome to Amazon Charts, a Ruby CLI app that displays a list of the top 20 selling books in Fiction and Non-Fiction, for the <i>current</i> week.
 
 ## Installation
 
@@ -16,7 +16,25 @@ Then execute:
 
 Run `bin/setup` to install dependencies (if necessary).
 
-Then, run `bin/amazon_charts` to run the app, via an interactive prompt.
+Then, run `bin/amazon_charts` to start the app.
+
+## Instructions
+
+Using the command prompt in terminal:
+
+Press [1] to see a list of the top 20 books sold in fiction.
+Press [2] to see a list of the top 20 books sold in non-fiction. 			
+Type "exit" to exit the program.
+
+Users will see a list of the following attributes, for each book:
+
+- Ranking
+- Title
+- Author
+- Publisher
+- Type (Fiction or Non-Fiction)
+
+Pressing any other key will display an error message and promt the user to make a correct entry.
 
 ## Contributing
 
