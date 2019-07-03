@@ -32,7 +32,11 @@ Users will see a list of the following attributes, for each book:
 - Publisher
 - Type (Fiction or Non-Fiction)
 
+<<<<<<< HEAD
 <img src="images/cli.png" width="500">
+=======
+<img src="images/cli.png" width="500" >
+>>>>>>> refs/remotes/origin/master
 
 ## Contributing
 
