@@ -22,6 +22,8 @@ Press [1] to see a list of the top 20 books sold in fiction.
 Press [2] to see a list of the top 20 books sold in non-fiction.  
 Type "exit" to exit the program.
 
+Note: Pressing any other key will display an error message and promt the user to make a correct entry.
+
 Users will see a list of the following attributes, for each book:
 
 - Ranking (in order of #1 to #20)
@@ -30,7 +32,7 @@ Users will see a list of the following attributes, for each book:
 - Publisher
 - Type (Fiction or Non-Fiction)
 
-Pressing any other key will display an error message and promt the user to make a correct entry.
+<img src="images/cli.png">
 
 ## Contributing
 
