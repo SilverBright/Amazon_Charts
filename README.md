@@ -20,9 +20,9 @@ Then, run `bin/amazon_charts` to start the app.
 
 ## Instructions
 
-<p>Press [1] to see a list of the top 20 books sold in fiction.</p>
-<p>Press [2] to see a list of the top 20 books sold in non-fiction.</p> 			
-<p>Type "exit" to exit the program.</p>
+Press [1] to see a list of the top 20 books sold in fiction.  
+Press [2] to see a list of the top 20 books sold in non-fiction.  
+Type "exit" to exit the program.
 
 Users will see a list of the following attributes, for each book:
 
