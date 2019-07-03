@@ -10,9 +10,7 @@ Clone or Download:
 
     git@github.com:SilverBright/Amazon-Charts.git
 
-Then execute:
-
-    $ bundle
+Run `bundle`.
 
 Run `bin/setup` to install dependencies.
 
@@ -26,13 +24,15 @@ Type "exit" to exit the program.
 
 Users will see a list of the following attributes, for each book:
 
-- Ranking
+- Ranking (in order of #1 to #20)
 - Title
 - Author
 - Publisher
 - Type (Fiction or Non-Fiction)
 
 Pressing any other key will display an error message and promt the user to make a correct entry.
+
+[Imgur](https://i.imgur.com/e9yiqBH.png)
 
 ## Contributing
 
