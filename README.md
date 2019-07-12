@@ -40,4 +40,4 @@ Bug reports and pull requests are welcome on GitHub. This project is intended to
 
 ## License
 
-The application is available as open source under the terms of the MIT License.
+The application is available as open source under the terms of the [MIT License](https://github.com/SilverBright/Amazon-Charts/blob/master/LICENSE.txt).
