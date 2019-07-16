@@ -4,6 +4,9 @@ Welcome to Amazon Charts, a Ruby CLI app that displays a list of the top 20 sell
 
 Data scraped using Nokogiri from: https://www.amazon.com/charts
 
+<img src="images/cli.png" width="200"> [![Video Demo](images/videoimage.png)](https://youtu.be/3j27yScYdTA)
+
+
 ## Installation
 
 Clone or Download:
@@ -32,7 +35,6 @@ Users will see a list of the following attributes, for each book:
 - Publisher
 - Type (Fiction or Non-Fiction)
 
-<img src="images/cli.png" width="500">
 
 ## Contributing
 
