@@ -4,7 +4,8 @@ Welcome to Amazon Charts, a Ruby CLI app that displays a list of the top 20 sell
 
 Data scraped using Nokogiri from: https://www.amazon.com/charts
 
-<img src="images/cli.png" width="200"> <a href="https://youtu.be/3j27yScYdTA" target="_blank"><img src="images/videoimage.png" 
+## Video Demo
+<a href="https://youtu.be/3j27yScYdTA" target="_blank"><img src="images/videoimage.png" 
 alt="Amazon Charts" width="450" /></a>
 
 
